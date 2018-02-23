@@ -83,7 +83,7 @@ class IceCream2 {
   //identical to code above
   addScoop2() {
     setTimeout( () => {   //arrow-function is used --> 'this' is NOT modified
-      this.scoops++;
+      this.scoops++;      //this still refers to the IceCream object (desert)
       console.log('scoop added!');
   }, 0.5);
 };
