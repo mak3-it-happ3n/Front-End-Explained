@@ -87,7 +87,9 @@ In _menu.html_ (created via yeoman), you can access the linked controller its de
 
 Example:
 
-`<div class="row">
+`   
+
+      <div class="row">
 
       <div class"items-container">
 
@@ -103,7 +105,8 @@ Example:
 
       </div>
 
-    </div>"`
+    </div>"
+    `
 
 Note that the controller's name _menu_ is the one defined when linking to the controller from _index.html_.
 
@@ -141,14 +144,16 @@ Multiple directives can be set on the same element. Example:
 
 `<span ng-if="menu.rating > 4.0" ng-class="{highlight: menu.rating > 4.5}">some Text</span>`
 
-**ng-model**: input, select and text area elements. Example:
+**ng-model**: create new models; e.g. input, select and change text area elements. Example:
 
-`<textarea ng-modell="menu.newReview" name="menu.review" rows="3" cols="40"</textarea>
+` <textarea ng-modell="menu.newReview" name="menu.review" rows="3" cols="40"</textarea>`
 
-<p>
+`<p>
 
   {{menu.newReview}}
 
   <span ng-if="!menu.newReview">Why not write a review!</span>
 
 </p>`
+
+Creates a textarea _newReview_ with some text underneath it, if the review box is empty.
