@@ -9,4 +9,13 @@ Yeoman helps to automatically create and organize files with the following comma
   **generate an Angular app** named _udaciMeals_ (in the current directory):
   `yo angular udaciMeals`
 
-  
+# Angular.JS
+
+## Modules
+A module holds everthing together (e.g. crontroller and templates).
+
+To **create a module** named _udaciMealsApp_, in _app.js_ type:
+`angular.module('udaciMealsApp', [])`;
+(the array is needed, even if it is empty)
+
+to **return a module**, leave out the array: `angular.module('udaciMealsApp)')`
