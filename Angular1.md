@@ -87,9 +87,7 @@ In _menu.html_ (created via yeoman), you can access the linked controller its de
 
 Example:
 
-`   
-
-      <div class="row">
+`<div class="row">
 
       <div class"items-container">
 
@@ -105,8 +103,7 @@ Example:
 
       </div>
 
-    </div>"
-    `
+    </div>"`
 
 Note that the controller's name _menu_ is the one defined when linking to the controller from _index.html_.
 
