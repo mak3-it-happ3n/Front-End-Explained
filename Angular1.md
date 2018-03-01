@@ -185,3 +185,11 @@ This will display the image referrenced in the controller under _this.image_. It
 `<p>Rating: {{item.rating}}</p>`
 
 `<img class="sample_image" ng-src="images/{{item.img}} alt={{item.name}}"`
+
+**ng-click**: react to a click event. Example:
+
+`<button ng-click="menu.increment(item)">+</button>`
+
+`<button ng-click="menu.decrement(item)">-</button>`
+
+Will call the _increment_ or _decrement_ method defined in the controller with the current menu-item as the argument (in the for loop from above).
