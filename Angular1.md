@@ -17,7 +17,7 @@ Yeoman helps to automatically create and organize files with the following comma
 
   this will create the file and also link to it in _index.html_!
 
-  **generate an Angular view** named _menu_:
+  **generate an Angular view / template** named _menu_:
 
   `yo angular:view menu`
 
@@ -72,7 +72,7 @@ To configure the controller, create it via yeoman and use a constructor function
 
       });`
 
-## Link to the view & the controller
+## Link to the view/template & the controller
 In _index.html_ link to the view (generated via yeoman) in the _div_ where you want to include it.
 
 `<div ng-include="'views/menu.html'" ng-controller="MenuCtrl as menu"></div>`
