@@ -58,8 +58,8 @@ defines the module _udaciMealsApp_ to be used for the _body_ section
 ## Configure the controller
 To configure the controller, create it via yeoman and use a constructor function in the module:
 
-`angular.module('udaciMealsApp)
-
+    `angular.module('udaciMealsApp)
+    
     .controller('MenuCtrl', function() {
 
       this.id = 5;
@@ -69,7 +69,7 @@ To configure the controller, create it via yeoman and use a constructor function
       this.img = "picture.jpg";
 
       this.rating = 10;
-      
+
       });`
 
 ## Link to the view & the controller
