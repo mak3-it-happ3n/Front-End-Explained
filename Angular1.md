@@ -168,6 +168,20 @@ Creates a textarea _newReview_ with some text underneath it, if the review box i
 
 `<p>Rating: {{item.rating}}</p>`
 
-`<p>Image: {{item.img}}</p>`
+This will loop over each item in the array _items_, that is stored as _this.items=[...<item data here>... ]_ in the controller in _menu.js_ display its name and rating.
 
-This will loop over each item in the array _items_, that is stored as _this.items=[...<item data here>... ]_ in the controller in _menu.js_
+**ng-src**: sets the source for a file, often used for images. Example:
+
+`<img class="sample_image" ng-src="images/{{this.img}} alt={{this.name}}"`
+
+This will display the image referrenced in the controller under _this.image_. It works with for loops too of course (e.g. as _item.image_  and _item.name_ in the example from _ng-repeat_):
+
+`<div class="items-container" ng-repeat="item in menu.items">`
+
+`<div class="col-md-4"`
+
+`<h4>{{item.name}}</h4>`
+
+`<p>Rating: {{item.rating}}</p>`
+
+`<img class="sample_image" ng-src="images/{{item.img}} alt={{item.name}}"`
