@@ -109,3 +109,31 @@ Example:
     `
 
 Note that the controller's name _menu_ is the one defined when linking to the controller from _index.html_.
+
+## Directives
+Angular.JS uses _Directives_ to link to its big list of functionalities. Directives are placed on DOM elements.
+
+Some directives are:
+
+**ng-app**: bootstrap the entire app with the module.
+Example:
+
+`<body ng-app="udaciMealsApp">`
+
+**ng-include**: include a an external html-template as a view
+Example: see next example
+
+**ng-controller**: link and name a controller:
+Example:
+
+`<div ng-include="'views/menu.html'" ng-controller="MenuCtrl as menu"></div>`
+
+**ng-if**: creates or removes an element, based on the validity of its expression. Example:
+
+`<span ng-if="menu.rating > 4.0"> - People love this item!</span>`
+
+Only displays the span-element if menu.rating is higher than 4.0
+
+**ng-class**
+**ng-model**
+**ng-if**
