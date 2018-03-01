@@ -148,12 +148,14 @@ Multiple directives can be set on the same element. Example:
 
 ` <textarea ng-modell="menu.newReview" name="menu.review" rows="3" cols="40"</textarea>`
 
-`<p>
+`<p>`
 
-  {{menu.newReview}}
+  `{{menu.newReview}}`
 
-  <span ng-if="!menu.newReview">Why not write a review!</span>
+  `<span ng-if="!menu.newReview">Why not write a review!</span>`
 
-</p>`
+`</p>`
 
 Creates a textarea _newReview_ with some text underneath it, if the review box is empty.
+
+**ng-repeat**: used to loop over items in an array. Example:
