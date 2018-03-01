@@ -88,6 +88,7 @@ In _menu.html_ (created via yeoman), you can access the linked controller its de
 Example:
 
 `   
+
       <div class="row">
 
       <div class"items-container">
