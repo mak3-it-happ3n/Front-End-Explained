@@ -87,22 +87,24 @@ In _menu.html_ (created via yeoman), you can access the linked controller its de
 
 Example:
 
-`<div class="row">
+`   
+  <div class="row">
 
-  <div class"items-container">
+      <div class"items-container">
 
-    <div class="col-md-4>
+        <div class="col-md-4>
 
-      <h4>{{menu.name}}</h4>
+          <h4>{{menu.name}}</h4>
 
-      <p>Rating: {{menu.rating}}</p>
+          <p>Rating: {{menu.rating}}</p>
 
-      <p>Image: {{menu.img}}</p>
+          <p>Image: {{menu.img}}</p>
 
-    </div>
+        </div>
 
-  </div>
-  
-</div>"`
+      </div>
+
+    </div>"
+    `
 
 Note that the controller's name _menu_ is the one defined when linking to the controller from _index.html_.
