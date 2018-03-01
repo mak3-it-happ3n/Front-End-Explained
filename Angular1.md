@@ -132,8 +132,26 @@ Example:
 
 `<span ng-if="menu.rating > 4.0"> - People love this item!</span>`
 
-Only displays the span-element if menu.rating is higher than 4.0
+Only displays the span-element if _{{menu.rating}}_ is higher than 4.0. (note that double braces are not used here!)
 
-**ng-class**
-**ng-model**
-**ng-if**
+**ng-class**: applies a class based on a condition. Example:
+
+`<span ng-class="{highlight: menu.rating > 4.5}">some Text</span>`
+
+The class _highlight_ will be added to the span (and thus the text _some Text_) if _{{menu.rating}}_ is higher than 4.5.
+
+Multiple directives can be set on the same element. Example:
+
+`<span ng-if="menu.rating > 4.0" ng-class="{highlight: menu.rating > 4.5}">some Text</span>`
+
+**ng-model**: input, select and text area elements. Example:
+
+`<textarea ng-modell="menu.newReview" name="menu.review" rows="3" cols="40"</textarea>
+
+<p>
+
+  {{menu.newReview}}
+
+  <span ng-if="!menu.newReview">Why not write a review!</span>
+
+</p>`
