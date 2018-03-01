@@ -158,4 +158,16 @@ Multiple directives can be set on the same element. Example:
 
 Creates a textarea _newReview_ with some text underneath it, if the review box is empty.
 
-**ng-repeat**: used to loop over items in an array. Example:
+**ng-repeat**: loop over items in an array. Example:
+
+`<div class="items-container" ng-repeat="item in menu.items">`
+
+`<div class="col-md-4"`
+
+`<h4>{{item.name}}</h4>`
+
+`<p>Rating: {{item.rating}}</p>`
+
+`<p>Image: {{item.img}}</p>`
+
+This will loop over each item in the array _items_, that is stored as _this.items=[...<item data here>... ]_ in the controller in _menu.js_
