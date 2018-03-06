@@ -22,6 +22,7 @@ Please differentiate between **Directories** and _files_
 automaticall generate a _workbox-config.js_ at the root.
 
 In the example, the generated _workbox_config.js_ looks likes this:
+
 `module.exports = {`
 
   `"globDirectory": "build/"`
@@ -33,7 +34,7 @@ In the example, the generated _workbox_config.js_ looks likes this:
     `],`
 
     `"swDest": "build/sw.js"`
-    
+
     `};`
 
 ## Step 3: generate a Service Worker
