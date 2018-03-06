@@ -23,19 +23,19 @@ automaticall generate a _workbox-config.js_ at the root.
 
 In the example, the generated _workbox_config.js_ looks likes this:
 
-`module.exports = {
+`module.exports = {`
 
-  "globDirectory": "build/"
+`"globDirectory": "build/"`
 
-  "globPatterns": [
+`"globPatterns": [`
 
-  "**/*.{css, html, js}"
+`"**/*.{css, html, js}"`
 
-    ],
+` ], `
 
-    "swDest": "build/sw.js"
+`"swDest": "build/sw.js"`
 
-  };`
+`};`
 
 ## Step 3: generate a Service Worker
 Once a config file has been created, we can generate the actual Service Worker
