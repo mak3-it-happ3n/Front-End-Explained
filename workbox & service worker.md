@@ -14,7 +14,7 @@ Please differentiate between **Directories** and _files_
 **js**: _app.js_
 
 
-## Step 1: install workbox
+## Step 1: install workbox command line interface
 `npm install workbox -cli` (check this in another example!)
 
 ## Step 2: generate a config-file with _workbox wizard_
@@ -44,3 +44,15 @@ with `generateSW`.
 The newly created Service Worker pre-caches files based on what is stated as
 _globPatterns_ in _workbox_config.js_ (in the example, the pattern
   `"**/*.{css, html, js}"` )  
+
+## Step 4: register the Service Worker
+In order to get the newly generated service worker to work, we have to register
+it in _index.html_:
+
+`<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () = > {
+    navigator.serviceWorker.register('/sw.js');
+    });
+  }
+  </script>`
