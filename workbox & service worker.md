@@ -50,9 +50,15 @@ In order to get the newly generated service worker to work, we have to register
 it in _index.html_:
 
 `<script>
+
 if ('serviceWorker' in navigator) {
+
   window.addEventListener('load', () = > {
+
     navigator.serviceWorker.register('/sw.js');
+
     });
+
   }
+  
   </script>`
