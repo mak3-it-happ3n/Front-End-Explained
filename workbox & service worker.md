@@ -62,3 +62,10 @@ navigator.serviceWorker.register('/sw.js');
 }
 
 </script>`
+
+## Step 5: serve the app
+Now start the app (e.g. 'npm run serve') and check _dev tools_ to see the cache
+to see the service worker caching _index.html_, _app.js_ and _app.css_.
+
+For additional infos (changing the files, injectManifest, etc.), refer to
+https://blog.usejournal.com/a-5-minute-intro-to-workbox-3-0-156803952b3e
