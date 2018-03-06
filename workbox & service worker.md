@@ -3,13 +3,16 @@
 ## Initial structure
 Before using the service worker, the web app uses the following sample structure:
 
-  **Directory** _build_
-                **Directory** _CSS_
-                                    _app._CSS_
-                _index.html_
-                **Directory** _js_
-                                      _app.js_
-  _package.json_
+Please differentiate between **Directories** and _files_
+
+**build:** **CSS**, _index.html_, **js**
+
+ _package.json_
+
+**CSS:** _app.css_
+
+**js**: _app.js_
+
 
 ## Step 1: install workbox
 `npm install workbox -cli` (check this in another example!)
