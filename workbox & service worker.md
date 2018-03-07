@@ -39,7 +39,7 @@ In the example, the generated _workbox_config.js_ looks likes this:
 
 ## Step 3: generate a Service Worker
 Once a config file has been created, we can generate the actual Service Worker
-with `generateSW`.
+with `workbox generateSW workbox-config.js`.
 
 The newly created Service Worker pre-caches files based on what is stated as
 _globPatterns_ in _workbox_config.js_ (in the example, the pattern
@@ -53,7 +53,7 @@ it in _index.html_:
 
 if ('serviceWorker' in navigator) {
 
-window.addEventListener('load', () = > {
+window.addEventListener('load', () => {
 
 navigator.serviceWorker.register('/sw.js');
 
