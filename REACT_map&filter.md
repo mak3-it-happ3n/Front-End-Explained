@@ -3,9 +3,11 @@ The method is highly useful to **iterate over array items** and returns a new ar
 
 Example:
 
-`const names = ['Michael', 'Ryan', 'Tyler'];
+`
+const names = ['Michael', 'Ryan', 'Tyler'];
 
-const nameLengths = names.map( name => name.length );`
+const nameLengths = names.map( name => name.length );
+`
 
 (each item in _names_ is temporarily stored in the variable _name_ and its length is returned)
 
