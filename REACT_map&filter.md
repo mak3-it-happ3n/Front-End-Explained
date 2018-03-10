@@ -10,7 +10,7 @@ const nameLengths = names.map( name => name.length );`
 
 The array _nameLengths_ will hold the values `[7, 4, 5]`.
 
-
+_.map_ methods are often used to **replace for-loops** for arrays!
 
 # .filter Method
 The method is useful to **filter items of an array** and returns a new array.
@@ -23,6 +23,8 @@ const shortNames = names.filter( name => name.length < 5 );`
 (each item in _names_ is temporarily stored in the variable _name_ and its length is compared against the filter condition and returned if the condition is true)
 
 The array _shortNames_ will hold the value `['Ryan']`.
+
+_.filter_ methods are often used to **replace if-statements** for arrays!
 
 # Combining .map and .filter
 
