@@ -12,6 +12,9 @@ The array _nameLengths_ will hold the values `[7, 4, 5]`.
 
 _.map_ methods are often used to **replace for-loops** for arrays!
 
+The method can also be used to **return both, the value and the index** of each item:
+`const namesAndIndex = names.map((name, index) => name.length + index);`
+
 # .filter Method
 The method is useful to **filter items of an array** and returns a new array.
 
