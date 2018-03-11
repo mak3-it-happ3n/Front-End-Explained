@@ -49,7 +49,7 @@ Note that:
 
 The following 2 examples are exactly the same:
 
-Created as a class:
+**Created as a class:**
 
 `class Email extends React.Component {
 
@@ -64,7 +64,7 @@ Created as a class:
   }
 };`
 
-Created as a stateless function:
+**Created as a stateless arrow function:**
 
 `const Email = (props) => (
 
