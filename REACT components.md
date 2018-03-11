@@ -66,9 +66,6 @@ The following 2 examples are exactly the same:
 
 **Created as a stateless arrow function:**
 
-`const Email = (props) => (
-
-  <div>
-    {props.text}
-  </div>
-);`
+`const Email = (props) => (`
+  
+`<div> {props.text} </div> );`
