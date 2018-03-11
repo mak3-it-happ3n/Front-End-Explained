@@ -45,7 +45,7 @@ Note that:
 - a stateless function takes _props_ as its argument
 - props are access without _this_ via _props...._
 
-# Compare Components created as a class and stateless functions directly
+# Compare Components created as a class and stateless functions (written as ES6 arrow functions) directly
 
 The following 2 examples are exactly the same:
 
@@ -67,7 +67,7 @@ Created as a class:
 Created as a stateless function:
 
 `const Email = (props) => (
-  
+
   <div>
     {props.text}
   </div>
