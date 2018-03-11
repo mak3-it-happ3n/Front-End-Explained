@@ -31,7 +31,7 @@ To **access the state** of a component, we use the exact same logic as for acces
 ## Updating state
 To update a component's state, we use `setState`. There are 2 ways to do this:
 
-1. If we the **new state of the component DEPENDS on the previous state**, we use the _functional setState_ approach:
+1. If the **new state of the component DEPENDS on the previous state**, we use the _functional setState_ approach:
 
 `this.setState((prevState) = > ({`
 
