@@ -1,4 +1,6 @@
 # PropTypes
+PropTypes are a great way to validate intended data types in React.
+
 We can use _PropTypes_ to specify which data types are required in which format whenever props are passed.
 
 ## Install PropTypes
