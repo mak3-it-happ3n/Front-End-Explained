@@ -44,3 +44,26 @@ Example:
 Note that:
 - a stateless function takes _props_ as its argument
 - props are access without _this_ via _props...._
+
+# Compare Components created as a class and stateless functions directly
+
+The following 2 examples are exactly the same:
+
+Created as a class:
+
+`class Email extends React.Component {
+  render() {
+    return (
+      <div>
+        {this.props.text}
+      </div>
+    );
+  }
+};`
+
+Created as a stateless function:
+`const Email = (props) => (
+  <div>
+    {props.text}
+  </div>
+);`
