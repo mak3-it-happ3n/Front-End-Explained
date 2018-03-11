@@ -52,8 +52,11 @@ The following 2 examples are exactly the same:
 Created as a class:
 
 `class Email extends React.Component {
+
   render() {
+
     return (
+
       <div>
         {this.props.text}
       </div>
@@ -62,7 +65,9 @@ Created as a class:
 };`
 
 Created as a stateless function:
+
 `const Email = (props) => (
+  
   <div>
     {props.text}
   </div>
